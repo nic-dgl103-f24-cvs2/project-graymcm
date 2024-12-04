@@ -109,7 +109,7 @@ nav ul li button:hover {
   gap: 128px;
   padding-top: 64px;
 }
-
+/* Map Section Layout */
 #map {
   display: flex;
   flex-direction: column;
