@@ -1,0 +1,313 @@
+html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            background-color: #000;
+        }
+
+        h1,
+        h2 {
+            color: #fff400;
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        h2 {
+            margin-top: 32px;
+        }
+
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            padding: 10px 5%;
+        }
+
+        header {
+            border: #fff400 3px solid;
+            border-width: 3px 0;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header #container {
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #header-logo {
+            height: 72px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li button {
+            background-color: black;
+            padding: 16px;
+            border-radius: 32px;
+            color: #ffcd00;
+            cursor: pointer;
+            font-weight: 500;
+            border: 1px solid #ffcd00;
+        }
+
+        nav ul li button:hover {
+            background-color: #ffcd00;
+            color: black;
+        }
+
+        #hamburger {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            border: none;
+            background: none;
+            outline: none;
+            display: none;
+        }
+
+        #hamburger span {
+            width: 20px;
+            height: 2px;
+            background: #fff;
+            margin: 2px;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        #social-icons img {
+            width: 30px;
+            margin-left: 10px;
+        }
+
+        #main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0 5%;
+            color: white;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 128px;
+            padding-top: 64px;
+        }
+
+        #map {
+            display: flex;
+            flex-direction: column;
+            gap: 56px;
+            width: 40%;
+        }
+
+        #map a {
+            padding: 8px;
+            padding-right: 16px;
+            border-radius: 64px;
+            cursor: pointer;
+            font-weight: 500;
+            border: 1px solid #ffcd00;
+            display: flex;
+            text-decoration: none;
+            gap: 16px;
+            width: fit-content;
+            background-color: #ffcd00;
+            color: black;
+        }
+
+        #map a:hover {
+            background-color: black;
+            color: #ffcd00;
+        }
+
+        #map img {
+            height: 50px;
+        }
+
+        #form {
+            width: 60%;
+        }
+
+        #form table {
+            width: 100%;
+        }
+
+        #form table tr {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+        }
+
+        #form table tbody {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        #form tr td:nth-child(1) {
+            width: 25%;
+            display: flex;
+        }
+        
+        #form tr td:nth-child(2) {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        #form select, #form textarea, #form input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            font-family: "Inter", sans-serif;
+            line-height: 1.4;
+        }
+
+        #form button {
+            background-color: white;
+            border-radius: 2px;
+            color: black;
+            cursor: pointer;
+            font-weight: 500;
+            border: none;
+            padding: 8px 32px;
+            font-family: "Inter", sans-serif;
+        }
+
+        footer {
+            border-top: #fff400 3px solid;
+            margin-top: 32px;
+            padding: 16px 0;
+        }
+
+        footer #container {
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: space-between;
+            gap: 32px;
+        }
+
+        footer>section>section {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+        }
+
+        footer img {
+            width: 300px;
+        }
+
+        footer h6 {
+            font-size: 1em;
+            margin: 0;
+            color: #ffcd00;
+            text-transform: uppercase;
+        }
+
+       /* Footer Social Icons */
+#footer-socials {
+    display: flex; /* Arrange icons in a row */
+    justify-content: center; /* Center align icons */
+    gap: 16px; /* Space between icons */
+    padding: 16px 0; /* Padding above and below */
+}
+
+#footer-socials img {
+    width: 24px; /* Consistent size for icons */
+    height: 24px; /* Match width */
+    object-fit: cover; /* Ensure proper scaling */
+    transition: transform 0.2s; /* Add hover effect */
+}
+
+        footer ul,
+        footer p {
+            margin: 0;
+        }
+
+
+        @media screen and (max-width: 1200px) {
+
+            #hamburger {
+                display: flex;
+            }
+
+            nav {
+                display: flex;
+                background: black;
+                color: white;
+                padding: 16px;
+                position: absolute;
+                top: 92px;
+                left: 0;
+                width: 100%;
+                justify-content: center;
+                padding: 0;
+                padding-bottom: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 16px;
+                align-self: center;
+                padding: 0;
+            }
+
+            nav[hidden] {
+                display: none;
+            }
+
+
+            #container {
+                padding: 10px 5%;
+                position: relative;
+            }
+
+            #main {
+                padding: 5%;
+                flex-direction: column;
+                gap: 64px;
+            }
+
+            #main>img {
+                width: 100%;
+            }
+
+            #main #home-text {
+                width: 100%;
+            }
+
+            #map{
+                width: 100%;
+            }
+
+            #form {
+                width: 100%;
+            }
+
+            footer>#container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            footer img {
+                width: 200px;
+            }
+        }
