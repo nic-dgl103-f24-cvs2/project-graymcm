@@ -253,7 +253,7 @@ footer p {
 /* Media Query for Smaller Screens */
 @media screen and (max-width: 1200px) {
   #hamburger {
-    display: flex;
+    display: flex; /* Show hamburger menu on smaller screens */
   }
 
   nav {
