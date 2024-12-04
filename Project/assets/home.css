@@ -120,6 +120,7 @@ nav ul li button:hover {
   aspect-ratio: 1/1;
   object-fit: cover;
 }
+/* Nicole Section (for Image and Video) */
 #nicole-section {
   position: relative; /* Establish positioning context */
   display: flex;
