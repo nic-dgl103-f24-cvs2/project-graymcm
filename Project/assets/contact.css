@@ -97,7 +97,7 @@ nav ul li button:hover {
   width: 30px;
   margin-left: 10px;
 }
-
+/* Main Section Layout */
 #main {
   display: flex;
   justify-content: space-between;
